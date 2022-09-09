@@ -1,0 +1,97 @@
+.modal{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+  .content {
+    width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      .title {
+        font-size: 25px;
+      }
+
+      .close {
+        display: flex;
+        align-items: center;
+        color: gray;
+        font-size: 20px;
+      }
+    }
+
+    .body {
+      .input-title {
+        margin-bottom: 10px;
+
+        input {
+          border: none;
+          border-bottom: 1px solid gray;
+          padding: 5px;
+          width: calc(100% - 10px);
+        }
+      }
+
+      .input-description {
+        margin-bottom: 10px;
+
+        textarea {
+          border: none;
+          border-bottom: 1px solid gray;
+          width: calc(100% - 10px);
+          resize: none;
+          padding: 5px;
+        }
+      }
+
+      .error {
+        margin-bottom: 10px;
+        color: red;
+      }
+
+      .time-block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+      }
+
+      .button-block {
+        display: flex;
+        justify-content: end;
+
+        button {
+          color: white;
+          border: none;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+        }
+
+        .delete {
+          background: red;
+          margin-right: 5px;
+        }
+
+        .save {
+          background: #000000;
+        }
+      }
+    }
+  }
+}
+.active{
+  display: flex;
+}
